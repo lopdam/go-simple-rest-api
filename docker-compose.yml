@@ -1,0 +1,10 @@
+
+services:
+  web:
+    container_name: rest-api
+    build: .
+    command: go run main.go
+    volumes:
+      - .:/code
+    ports:
+      - 3000:3000
